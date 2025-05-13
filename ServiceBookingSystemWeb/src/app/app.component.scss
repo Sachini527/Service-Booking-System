@@ -180,5 +180,90 @@ img.logo {
     min-height: 64px;
     margin-bottom: 20px;
     // background-image: url("../../assets/1.1.png");
-    
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.sidebar-logo-mobile {
+    min-height: 64px;
+    margin-bottom: 20px;
+    // background-image: url("../../assets/1.1.png");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sidebar-component {
+    padding: 0px 40px 0px;
+    background: $primary-color;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+        border: 0px;
+    }
+
+    .ant-menu {
+        background-color: transparent;
+    }
+
+    .ant-menu-submenu {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: #808191;
+        margin: 0px;
+        padding: 0px !important;
+        // display: flex;
+        // align-items: center;
+    }
+
+    .ant-menu-item {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: #808191;
+        margin: 0px;
+        padding: 0px !important;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &:hover {
+            color: #ffffff;
+
+            .anticon {
+                background-color: #ff7800;
+            }
+        }
+
+        &::after {
+            display: none;
+        }
+
+        &.ant-menu-item-selected {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+        .action {
+            min-width: 32px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+.inner-content{
+    background: #fdfdfd;
+    min-height: calc(100vh - 0px);
+}
+
