@@ -1,5 +1,6 @@
 package com.sachini527.ServiceBookingSystem.entity;
 
+import com.sachini527.ServiceBookingSystem.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.Data;
 
