@@ -1,6 +1,7 @@
 package com.sachini527.ServiceBookingSystem.services.authentication;
 
 import com.sachini527.ServiceBookingSystem.dto.SignupRequestDTO;
+import com.sachini527.ServiceBookingSystem.dto.UserDto;
 import com.sachini527.ServiceBookingSystem.entity.User;
 import com.sachini527.ServiceBookingSystem.enums.UserRole;
 import com.sachini527.ServiceBookingSystem.repository.UserRepository;
