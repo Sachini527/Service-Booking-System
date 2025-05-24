@@ -8,7 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -24,8 +23,8 @@ public class AuthenticationController {
             return new ResponseEntity<>("Client already exists with this Email!", HttpStatus.NOT_ACCEPTABLE);
         }
 
-        UserDto createUser = authService.signupClient(signupRequestDTO);
+        UserDto createdUser = authService.signupClient(signupRequestDTO);
 
-        return new ResponseEntity<>(createUser, HttpStatus.OK);
+        return new ResponseEntity<>(createdUser, HttpStatus.OK);
     }
 }
