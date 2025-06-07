@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { AuthService } from '../../services/auth/auth.service';
 import { last } from 'rxjs';
+import { CommonModule } from '@angular/common';
+import { DemoNgZorroAntdModule } from '../../../DemoNgZorroAntdModule';
 
 @Component({
   selector: 'app-signup-client',
   templateUrl: './signup-client.component.html',
-  styleUrls: ['./signup-client.component.scss']
+  styleUrls: ['./signup-client.component.scss'],
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule, RouterModule, DemoNgZorroAntdModule]
 })
 export class SignupClientComponent {
 
