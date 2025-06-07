@@ -22,14 +22,14 @@ registerLocaleData(en);
     AppComponent,
     LoginComponent,
     SignupComponent,
-    SignupClientComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     DemoNgZorroAntdModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SignupClientComponent
   ],
   providers: [
     provideNzI18n(en_US),
